@@ -187,6 +187,13 @@ ul {
   margin: 0 0 32px;
 }
 
+.anchor {
+  display:block;
+  height:60px; 
+  margin-top:-60px; 
+  visibility:hidden;
+}
+
 .skills-list {
   margin: 0;
   padding: 0;
@@ -294,4 +301,23 @@ ul {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.up-button {
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid #288be6;
+  color: #288be6;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
 }

@@ -8,7 +8,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="script" href="app.js">
+  <!-- <script src="https://code.jquery.com/jquery-git.min.js"></script> -->
+  <script src="app.js"></script>
 </head>
 
 <body>
@@ -22,13 +23,13 @@
         <button class="menu" type="button"><img src="./img/icon-menu.svg" alt="icon-menu" class="menu-img"></button>
         <nav class="navigation">
           <div class="containerLink">
-            <a href="#">
+            <a href="#linkSkills">
               <div class="navigation-link">
                 <p>My Skills</p>
                 <img src="./img/icon-skill.svg" alt="icon-skill" class="menu-img">
               </div>
             </a>
-            <a href="#">
+            <a href="#linkWorks">
               <div class="navigation-link">
                 <p>My Works</p>
                 <img src="./img/icon-portfolio.svg" alt="icon-portfolio" class="menu-img">
@@ -40,7 +41,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
     <section class="card">
       <div class="container">
         <div class="hero-image">
@@ -74,6 +75,8 @@
       </div>
       </div>
     </section>
+
+    <h2><a class="anchor" name="linkSkills">My Skills</a></h2>
 
     <section class="skills">
       <div class="container">
@@ -111,9 +114,11 @@
       </div>
     </section>
 
+    <h2><a class="anchor" name="linkWorks">My Works</a></h2>
+
     <section class="portfolio">
       <div class="container">
-        <h2 class="subheading">Мои работы</h2>
+        <h2 class="subheading">My Works</h2>
         <figure class="project-image">
           <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">>
         </figure>
@@ -132,7 +137,8 @@
       <a class="footer-email" href="mailto:taras.rd54@gmail.com">email: taras.rd54@gmail.com</a>
     </div>
   </footer>
-
-</body>
+  <button class="up-button" type="button">
+    ↑
+  </button>
 
 </html>
