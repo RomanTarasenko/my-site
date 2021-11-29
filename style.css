@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-top: 100px;
-  min-width: 960px;
+  min-width: 1000px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -61,6 +61,7 @@ a:hover {
 }
 
 .menu {
+  position: relative;
   margin-left: 56px;
   border-radius: 5px;
   padding: 0;
@@ -76,12 +77,19 @@ a:hover {
   color: #288be6;
 }
 
-.navigation ul {
+.navigation {
+  display: none;
+  position: absolute;
+}
+
+.menu:hover .navigation {display: block;}
+
+.containerLink {
   float: right;
-  margin-right: -10px;
   width: 140px;
   background-color: rgba(215, 240, 237, 1);
 }
+
 
 
 .navigation a {
@@ -94,7 +102,6 @@ a:hover {
   width: 120px;
   margin-top: 10px;
   padding: 10px;
-  /* background-color: rgba(215, 240, 237, 1); */ 
 }
 
 .navigation-link img {
