@@ -26,7 +26,7 @@ body {
   z-index: 9999;   
   width: 100%;   
   height: 50px;
-  background-color: rgba(215, 240, 237, 1);
+  background-color: #288be6;
 }
 
 
@@ -39,16 +39,13 @@ body {
 
 .page-header a {
   margin-left: 56px;
-  color: #288be6;
+  color: #ffffff;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
 
 }
 
-a:hover {
-  font-weight: bold;
-}
 
 .header-email {
   padding-left: 30px;
@@ -62,7 +59,7 @@ a:hover {
 
 .menu {
   position: relative;
-  margin-left: 56px;
+  margin-left: 50px;
   border-radius: 5px;
   padding: 0;
   background: transparent;
@@ -87,7 +84,7 @@ a:hover {
 .containerLink {
   float: right;
   width: 140px;
-  background-color: rgba(215, 240, 237, 1);
+  background-color: #288be6;
 }
 
 
@@ -118,7 +115,8 @@ a:hover {
 }
 
 .hero-image {
-  background-color: #222222;
+  background-image: url(./files/user.jpg);
+  background-position: -150px;
   border-radius: 40px;
   height: 400px;
   width: 300px;
@@ -203,12 +201,6 @@ ul {
   list-style: none;
 }
 
-/* .skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-} */
-
 .skill {
   display: flex;
   align-items: center;
@@ -261,8 +253,12 @@ ul {
 }
 
 .project-image {
-  margin: 0 0 24px;
-  text-align: center;
+  margin: 0 50px 24px;
+  text-align: left;
+}
+
+.project-txt {
+  text-align: left;
 }
 
 .projects p {
@@ -280,9 +276,47 @@ ul {
   color: #ffffff;
 }
 
+
+.slider {
+  height: 928px;
+  width: 1100px;
+  overflow: hidden;
+}
+
+.slider-line {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.slider-prev{
+  position: relative;
+  bottom: 600px;
+  right: 100px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.slider-next{
+  position: relative;
+  bottom: 600px;
+  right: -1050px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
+  background-color: #288be6;
+  color: #ffffff;
+}
+
+.footer-info span{
+  display: flex;
+  justify-content: right;
 }
 
 .page-footer a {
@@ -307,7 +341,7 @@ ul {
   position: fixed;
   z-index: 1;
   padding: 0;
-  bottom: 75px;
+  bottom: 150px;
   right: 100px;
   width: 60px;
   height: 60px;

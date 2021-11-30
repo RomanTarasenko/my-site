@@ -8,7 +8,6 @@
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <!-- <script src="https://code.jquery.com/jquery-git.min.js"></script> -->
   <script src="app.js"></script>
 </head>
 
@@ -36,16 +35,15 @@
               </div>
             </a>
           </div>
-          </div>
-        </nav>
       </div>
+      </nav>
+    </div>
     </div>
   </header>
   <main class="main">
     <section class="card">
       <div class="container">
         <div class="hero-image">
-          <!-- <img src="files/user.jpg" alt="Photo Roman Tarasenko"> -->
         </div>
         <div class="info">
           <h1>Tarasenko Roman</h1>
@@ -119,22 +117,46 @@
     <section class="portfolio">
       <div class="container">
         <h2 class="subheading">My Works</h2>
-        <figure class="project-image">
-          <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">>
-        </figure>
-        <h3>Магазин товаров для дома</h3>
-        <p>Мой первый сайт.</p>
-        <a class="button" href="source/project-gloevk/index.html">Открыть страницу</a>
-        <h3>Блог начинающего верстальщика</h3>
-        <p>Статический блог про обучение HTML и CSS.</p>
+
+        <div class="container slider">
+
+          <div class="slider-line">
+            <figure class="project-image">
+              <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
+              <figcaption class="project-txt">
+                <h3>Магазин товаров для дома</h3>
+                <p>Мой первый сайт.</p>
+                <a class="button" href="source/project-gloevk/index.html">Открыть страницу</a>
+              </figcaption>
+            </figure>
+
+            <figure class="project-image">
+              <img src="files/blog.jpeg" width="928" height="536" alt="Блог начинающего верстальщика">
+              <figcaption class="project-txt">
+                <h3>Блог начинающего верстальщика</h3>
+                <p>Статический блог про обучение HTML и CSS.</p>
+                <a class="button" href="#">Открыть страницу</a>
+              </figcaption>
+            </figure>
+            
+          </div>
+        </div>
+        <button class="slider-prev"><img src="./img/left-arrow.svg"></button>
+        <button class="slider-next"><img src="./img/right-arrow.svg"></button>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="container">
-      Tarasenko Roman<br>
-      <a class="footer-phone" href="tel:+79634323888">phone: +7(963)432-38-88</a>
-      <a class="footer-email" href="mailto:taras.rd54@gmail.com">email: taras.rd54@gmail.com</a>
+      <div class="footer-info">
+        <span>
+          Tarasenko Roman
+        </span>
+        <div>
+          <a class="footer-phone" href="tel:+79634323888">phone: +7(963)432-38-88</a>
+          <a class="footer-email" href="mailto:taras.rd54@gmail.com">email: taras.rd54@gmail.com</a>
+        </div>
+      </div>
     </div>
   </footer>
   <button class="up-button" type="button">
