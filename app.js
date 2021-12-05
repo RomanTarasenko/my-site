@@ -1,4 +1,7 @@
-let offset = 0;
+let count = 0;
+let width;
+let x1 = null;
+let y1 = null;
 
 function scrollTo() {
     window.scroll({
@@ -21,23 +24,76 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollTo();
     })
 
-    const sliderLine = document.querySelector('.slider-line')
+    const images = document.querySelectorAll('.slider .slider-line .slider-img img')
+    let sliderLine = document.querySelector('.slider-line')
 
-    document.querySelector('.slider-next').addEventListener('click', function () {
-        offset += 1050;
-        if(offset > 1100){
-            offset = 0
+    function init() {
+        console.log('resize')
+        width = document.querySelector('.slider').offsetWidth
+        sliderLine.style.width = width * images.length + 'px'
+        images.forEach(item => {
+            item.style.width = width + 'px'
+            item.style.height = 'auto'
+        })
+        rollSlider()
+    }
+    window.addEventListener('resize', init)
+    init()
+
+    document.querySelector('.slider-prev').addEventListener('click', function() {
+        count--;
+        if (count < 0) {
+            count = images.length - 1
         }
-        sliderLine.style.left = -offset + 'px';
+        rollSlider()
     })
 
-
-    document.querySelector('.slider-prev').addEventListener('click', function () {
-        offset -= 1050;
-        if(offset < 0) {
-            offset = 1050
+    document.querySelector('.slider-next').addEventListener('click', function() {
+        count++;
+        if (count >= images.length) {
+            count = 0
         }
-        sliderLine.style.left = -offset + 'px';
+        rollSlider()
     })
+
+    function rollSlider() {
+        sliderLine.style.transform = 'translate(-' +count * width + 'px)'
+    }
+
+    const sliderBlock = document.querySelector('.slider')
+    sliderBlock.addEventListener('touchstart', handleTouchStart, false)
+    sliderBlock.addEventListener('touchmove', handleTouchMove, false)
+
+
+    function handleTouchStart(event) {
+        const firstTouch = event.touches[0]
+        x1 = firstTouch.clientX
+    }
+    
+    function handleTouchMove(event) {
+        if (!x1) {
+            return false
+        }
+
+        let x2 = event.touches[0].clientX
+        let xDiff = x2 - x1
+
+        if (xDiff > 0) {
+            count++;
+        if (count >= images.length) {
+            count = 0
+        }
+        rollSlider()
+        }
+        else {
+            count--;
+        if (count < 0) {
+            count = images.length - 1
+        }
+        rollSlider()
+        }
+        x1 = null
+        y1 = null
+    }
 });
 
