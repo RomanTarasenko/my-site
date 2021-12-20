@@ -1,0 +1,143 @@
+body {
+    background-color: #E5E5E5;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #0084B4;
+}
+
+.home img {
+    margin-right: 10px;
+}
+
+.login {
+    background: transparent;
+    border: none;
+    margin-right: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0084B4;
+}
+
+.sign-up {
+    background-color: #0084B4;
+    border-radius: 100px;
+    padding: 7px 28px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.section-background {
+    height: 45%;
+}
+
+.section-background img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.separator {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+}
+
+.view {
+    display: flex;
+    margin-top: 10px;
+}
+
+.info {
+    display: block;
+    position: relative;
+    bottom: 180px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+.info span {
+    display: flex;
+    text-align: center;
+    color: #657786;
+}
+
+.info .user-name {
+    display: block;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.tweets {
+    margin-left: 120px;
+    margin-right: 30px;
+}
+
+.tweet {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.tweet img {
+    width: 10%;
+    height: 10%;
+    margin-right: 20px;
+}
+
+.whose-tweet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whose-tweet span {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.join {
+    background-color: #FFFFFF;
+    text-align: center;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.join h3 {
+    font-size: 18px;
+}
