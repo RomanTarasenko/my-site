@@ -16,9 +16,9 @@
     <header>
         <div class="header container">
             <a href="#" class="home"><img src="img/Logo.png" alt="logo"></img>Goccitter</a>
-            <div>
+            <div class="sign-in">
                 <button class="login">Login</button>
-                <button class="sign-up">Sign Up</button>
+                <!-- <button class="sign-up">Sign Up</button> -->
             </div>
         </div>
     </header>
@@ -45,8 +45,14 @@
                             <p>Tweets</p>
                             <p>15</p>
                         </div>
-                        <div class="tweets-container">
-                            <div class="tweet">
+                        <div class="comment-inner">
+                            <label class="tweet-label" for="tweet-input">New Tweet</label>
+                            <input type="text" class="tweet-field" placeholder="Tweet" required id="tweet-input">
+                        </div>
+                        <button class="button" type="submit">Отправить</button>
+                        <div id="tweets" class="tweets-container">
+                            
+                            <!-- <div class="tweet">
                                 <img src="img/Avatar.png" alt="avatar" class="tweet-avatar">
                                 <div>
                                     <div class="whose-tweet">
@@ -54,84 +60,23 @@
                                         <p>@rtarasenko</p>
                                         <p><img src="img/Ellipse 2.png" alt="eclips">20 dec</p>
                                     </div>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa quae
-                                        est
-                                        eligendi
-                                        quas
-                                        repudiandae excepturi, recusandae exercitationem modi dolorem earum iure dolorum
-                                        ipsam
-                                        facilis
-                                        impedit eos. Id, harum debitis!
-                                    </p>
-                                    <div class="heart-score">
+                                    <p class="tweet-text"></p>
+                                     <div class="heart-score">
                                         <img src="img/Vector.png" alt="heart" class="heart">
                                         <p>
                                             15
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tweet">
-                                <img src="img/Avatar.png" alt="avatar" class="tweet-avatar">
-                                <div>
-                                    <div class="whose-tweet">
-                                        <h3>Roman Tarasenko</h3>
-                                        <p>@rtarasenko</p>
-                                        <p><img src="img/Ellipse 2.png" alt="eclips">20 dec</p>
-                                    </div>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa quae
-                                        est
-                                        eligendi
-                                        quas
-                                        repudiandae excepturi, recusandae exercitationem modi dolorem earum iure dolorum
-                                        ipsam
-                                        facilis
-                                        impedit eos. Id, harum debitis!
-                                    </p>
-                                    <div class="heart-score">
-                                        <img src="img/Vector.png" alt="heart" class="heart">
-                                        <p>
-                                            15
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tweet">
-                                <img src="img/Avatar.png" alt="avatar" class="tweet-avatar">
-                                <div>
-                                    <div class="whose-tweet">
-                                        <h3>Roman Tarasenko</h3>
-                                        <p>@rtarasenko</p>
-                                        <p><img src="img/Ellipse 2.png" alt="eclips">20 dec</p>
-                                    </div>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa quae
-                                        est
-                                        eligendi
-                                        quas
-                                        repudiandae excepturi, recusandae exercitationem modi dolorem earum iure dolorum
-                                        ipsam
-                                        facilis
-                                        impedit eos. Id, harum debitis!
-                                    </p>
-                                    <div class="heart-score">
-                                        <img src="img/Vector.png" alt="heart" class="heart">
-                                        <p>
-                                            15
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="join">
+                    <!-- <div class="join">
                         <img src="img/Rectangle 5.jpg" alt="pict">
                         <h3>Hey!<br> Why don’t you join us?</h3>
                         <span>It’s simple - just click on sign up button!</span><br>
                         <button class="sign-up">Sign Up</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -148,6 +93,21 @@
                 </div>
             </div>
         </div>
+        <!-- <div id="popup_sign_up" class="popup_sign_up">
+            <div class="popup-body_sign_up">
+                <div class="popup-content_sign_up">
+                    <div class="popup-title_sign_up">Sign Up</div>
+                    <div class="popup-form_sign_up">
+                        <input type="text" placeholder="First Name"><br>
+                        <input type="text" placeholder="Last Name"><br>
+                        <input type="text" placeholder="Login"><br>
+                        <input type="text" placeholder="Location"><br>
+                        <input type="password" placeholder="Password"><br>
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </main>
     <script src="app.js"></script>
 </body>

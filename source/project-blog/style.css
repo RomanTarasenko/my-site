@@ -31,10 +31,16 @@ header {
     font-weight: bold;
     color: #0084B4;
     text-decoration: none;
+    padding: 10px;
 }
 
 .home img {
     margin-right: 10px;
+}
+
+.sign-in{
+    display: flex;
+    align-items: center;
 }
 
 .login {
@@ -248,3 +254,54 @@ label {
     color: #FFFFFF;
     width: 100%;
 }
+
+/* .popup_sign_up {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #73767888;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup_sign_up.open {
+    opacity: 1;
+    visibility: visible;
+}
+.popup_sign_up.open .popup-content_sign_up {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.popup-body_sign_up {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup-content_sign_up {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+
+}
+.popup-title_sign_up {
+    margin-bottom: 10px;
+}
+.popup-form_sign_up input:not(:last-child) {
+    margin-bottom: 15px;
+}
+.popup-form_sign_up button {
+    background-color: #0084B4;
+    border-radius: 100px;
+    padding: 7px 28px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+} */
