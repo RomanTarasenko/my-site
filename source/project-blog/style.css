@@ -122,6 +122,21 @@ h2 {
     width: 15%;
 }
 
+#submit_tweet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tweet-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #0084B4;
+    color: #FFFFFF;
+}
+
 .tweets-counter p:last-child {
     font-size: 18px;
     font-weight: bold;
@@ -162,8 +177,9 @@ h2 {
     margin-left: 10px;
 }
 
-p img {
-    margin-right: 5px;
+.tweet-date {
+    color: #657786;
+    margin-top: 10px;
 }
 
 
@@ -172,34 +188,34 @@ p {
     margin-bottom: 0;
 }
 
-.heart {
+/* .heart {
     width: 15px;
     height: 15px;
     margin-right: 5px;
-}
+} */
 
-.heart-score {
+/* .heart-score {
     display: flex;
     margin-top: 15px;
     align-items: center;
-}
+} */
 
-.heart-score p {
+/* .heart-score p {
     font-size: 12px;
     color: #657786;
-}
+} */
 
-.join {
+/* .join {
     background-color: #FFFFFF;
     text-align: center;
     height: fit-content;
     border-radius: 5px;
     padding: 5px;
-}
+} */
 
-.join h3 {
+/* .join h3 {
     font-size: 18px;
-}
+} */
 
 .popup {
     position: fixed;

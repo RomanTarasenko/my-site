@@ -43,13 +43,15 @@
                     <div class="tweets">
                         <div class="tweets-counter">
                             <p>Tweets</p>
-                            <p>15</p>
+                            <p class="tweets-count">0</p>
                         </div>
                         <div class="comment-inner">
-                            <label class="tweet-label" for="tweet-input">New Tweet</label>
-                            <input type="text" class="tweet-field" placeholder="Tweet" required id="tweet-input">
+                            <form method="POST" action="" id="submit_tweet">
+                                <label class="tweet-label" for="tweet-input">New Tweet</label>
+                                <input type="text" class="tweet-field" placeholder="Tweet" required id="tweet-input">
+                                <button class="tweet-button" type="submit">Отправить</button>
+                            </form>
                         </div>
-                        <button class="button" type="submit">Отправить</button>
                         <div id="tweets" class="tweets-container">
                             
                             <!-- <div class="tweet">
